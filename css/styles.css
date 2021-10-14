@@ -212,29 +212,23 @@ ul {
   width: 270px;
 }
 
-.our-features-description::before {
-  display: block;
+.features-bg {
+  display: flex;
   height: 120px;
   margin-bottom: 30px;
-  content: "";
   background-color: #f5f4fa;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 25px 0;
+}
+.features-icon{
+
+justify-content: center;
+align-items: center;
+object-fit: cover;
 }
 
-.img-antenna::before {
-  background-image: url(../images/image-our-specials/antenna.svg);
-}
-.img-clock::before {
-  background-image: url(../images/image-our-specials/clock.svg);
-}
-.img-diagram::before {
-  background-image: url(../images/image-our-specials/diagram.svg);
-}
-.img-astronaut::before {
-  background-image: url(../images/image-our-specials/astronaut.svg);
-}
+
+
 
 .our-features-description:not(:last-child) {
   margin-right: 30px;
@@ -389,11 +383,8 @@ ul {
   border-radius: 4px;
 
 }
-.icon-customers{
-  width: 106px;
-  height: 60px;
-  object-fit: cover;
-}
+
+
 
 
 
@@ -435,3 +426,4 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+icon-foster-peters
