@@ -47,6 +47,10 @@ ul {
   text-decoration: none;
 }
 
+.flex{
+  display: flex;
+}
+
 /* header */
 .header-underline {
   border-bottom: 1px solid #f5f4fa;
@@ -74,13 +78,8 @@ ul {
   display: flex;
   align-items: center;
 }
-.main-nav-list {
-  display: flex;
-}
+
 .connect-header {
-  display: flex;
-}
-.all-main-item {
   display: flex;
 }
 
@@ -207,22 +206,39 @@ ul {
 
 .our-features {
   display: flex;
+  
 }
+
+
 .our-features-description {
+  display: flex;
   width: 270px;
+  flex-wrap: wrap;
+  margin-right: 30px;
+
 }
 
 .features-bg {
   display: flex;
+ width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 0;
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.features-icon {
+  display: flex;
+  fill: var(--primary-text-color);
+
 }
 
 
-.our-features-description:not(:last-child) {
+.our-features-description,:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -264,9 +280,7 @@ ul {
   padding-bottom: 30px;
 }
 
-.team-list {
-  display: flex;
-}
+
 .team-item {
   text-align: center;
   background: #ffffff;
@@ -278,31 +292,16 @@ ul {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-
-
-/* our-customars */
-
-.our-customars {
-  display: flex;
+.icons-social{
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  fill: #AFB1B8;
+  border: 0 transparent ;
+  border-radius: 25px;
 }
 
-.our-customers-link:not(:last-child) {
-  margin-right: 30px;
-}
 
-.our-customers-link {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 16px 0; 
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-}
 
 /* portfolio */
 
@@ -382,7 +381,36 @@ ul {
   color: var(--secondery-text-color);
 }
 
+/* our-customars */
 
+.our-customars {
+  display: flex;
+}
+.our-customers-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-customers-link {
+  display: flex;
+}
+
+.icon-customers{
+display: inline-block;
+width: 170px;
+  height: 92px;
+  fill: #AFB1B8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+
+}
+.icon-customers:hover,
+.icon-customers:focus{
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
 
 
 

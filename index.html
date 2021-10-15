@@ -23,13 +23,13 @@
     <!-- Шапка страницы -->
 
     <header class="header-underline">
-      <div class="container all-main-item">
+      <div class="container flex">
         <nav class="main-nav">
           <a href="./index.html" lang="en" class="logo"
             ><span class="text">Web</span>Studio</a
           >
 
-          <ul class="list main-nav-list">
+          <ul class="list flex">
             <li class="main-nav-item">
               <a href="./index.html" class="item current">Студия</a>
             </li>
@@ -40,7 +40,7 @@
           </ul>
         </nav>
 
-        <ul class="list connect-header">
+        <ul class="list connect-header ">
           <li class="connect-header-list">
             <a href="mailto:info@devstudio.com" class="item">
               info@devstudio.com</a
@@ -66,13 +66,13 @@
 
       <section class="section our-specials">
         <div class="container">
-          <h2 class="hidden-element">наши особености</h2>
+          <h2 class="  height-element">наши особености</h2>
 
           <ul class="list our-features">
-            <li class="our-features-description ">
+            <li class="our-features-description">
               <div class="features-bg">
-                <svg class="features-icon" width: 70px; height: 70px;>
-                  <use href="./images/symbol-defs.svg#icon-antenna" ></use>
+                <svg class="features-icon" width="70"   height="70">
+                  <use  href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="subtitle">Внимание к деталям</h3>
@@ -81,10 +81,9 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="our-features-description ">
+            <li class="our-features-description">
               <div class="features-bg">
-                <svg class="features-icon" width: 70px;
-                height: 70px;>
+                <svg class="features-icon"width="70"   height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -96,8 +95,7 @@
             </li>
             <li class="our-features-description">
               <div class="features-bg">
-                <svg class="features-icon" width: 70px;
-                height: 70px;>
+                <svg class="features-icon" width="70"   height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -107,10 +105,9 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="our-features-description ">
+            <li class="our-features-description">
               <div class="features-bg">
-                <svg class="features-icon" width: 70px;
-                height: 70px;>
+                <svg class="features-icon" width="70"   height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -159,7 +156,7 @@
       <section class="section team-bc">
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="list team-list">
+          <ul class="list flex">
             <li class="team-item">
               <img
                 src="./images/our_team/ihor_demyanenko.jpg"
@@ -170,6 +167,39 @@
               <div class="team-text">
                 <h3 class="subtitle">Игорь Демьяненко</h3>
                 <p lang="en">Product Designer</p>
+                <ul class="list flex">
+                  <li>
+                    <a href="">
+                      <svg class="icons-social"
+                       >
+                        <use href="./images/symbol-defs.svg#icon-instagram"width="20"   height="20" ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg class="icons-social">
+                        <use href="./images/symbol-defs.svg#icon-twitter" width="20"   height="20"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg class="icons-social">
+                        <use href="./images/symbol-defs.svg#icon-facebook" width="20"   height="20"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg class="icons-social">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"width="20"   height="20"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+                
               </div>
             </li>
 
@@ -214,57 +244,66 @@
           </ul>
         </div>
       </section>
+
+      <!-- our-customars -->
+
+
+      
       <section class="section">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul class="list our-customars">
-            <li class="our-customers-link">
-              <a href="/"><svg class="icon-customers" Width: 106px;
-                Height: 60px;>
-                <use
-                  href="./images/symbol-defs.svg#icon-foster-peters" wid
-                ></use></svg
-            ></a>
-            </li>
+          <ul class="list our-customars" >
             <li class="our-customers-link">
               <a href="/"
-                ><svg class="icon-customers">
+                ><svg class="icon-customers"width="106"   height="60"  >
                   <use
-                    href="./images/symbol-defs.svg#icon-company-tag-line" 
+                    href="./images/symbol-defs.svg#icon-ya-co"
                   ></use></svg></a>
             </li>
             <li class="our-customers-link">
-              <a href="/"><svg class="icon-customers">
-                <use
-                  href="./images/symbol-defs.svg#icon-foster-peters" wid
-                ></use></svg
-            ></a>
+              <a href="/"
+                ><svg class="icon-customers" width="106"   height="60">
+                  <use
+                    href="./images/symbol-defs.svg#icon-company-tag-line"
+                  ></use></svg></a>
             </li>
             <li class="our-customers-link">
-              <a href="/"><svg class="icon-customers">
-                <use
-                  href="./images/symbol-defs.svg#icon-foster-peters" wid
-                ></use></svg
-            ></a>
+              <a href="/"
+                ><svg class="icon-customers" width="106"   height="60">
+                  <use
+                    href="./images/symbol-defs.svg#icon-company"
+                
+                  ></use></svg></a>
             </li>
             <li class="our-customers-link">
-              <a href="/"><svg class="icon-customers">
-                <use
-                  href="./images/symbol-defs.svg#icon-foster-peters" wid
-                ></use></svg
-            ></a>
+              <a href="/"
+                ><svg class="icon-customers"width="106"   height="60">
+                  <use 
+                    href="./images/symbol-defs.svg#icon-foster-peters"
+                
+                  ></use></svg></a>
             </li>
             <li class="our-customers-link">
-              <a href="/"><svg class="icon-customers">
-                <use
-                  href="./images/symbol-defs.svg#icon-foster-peters" wid
-                ></use></svg
-            ></a>
+              <a href="/"
+                ><svg class="icon-customers"width="106"   height="60">
+                  <use
+                    href="./images/symbol-defs.svg#icon-brand"
+                
+                  ></use></svg></a>
+            </li>
+            <li class="our-customers-link">
+              <a href="/"
+                ><svg class="icon-customers"width="106"   height="60">
+                  <use
+                    href="./images/symbol-defs.svg#icon-company-tag"
+                  
+                  ></use></svg></a>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="main-footer">
       <div class="container">
         <a href="./index.html" lang="en" class="logo"
