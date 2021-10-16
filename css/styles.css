@@ -50,6 +50,11 @@ ul {
 .flex{
   display: flex;
 }
+.hiden-element{
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
 
 /* header */
 .header-underline {
@@ -204,10 +209,7 @@ ul {
   line-height: 1.7;
 }
 
-.our-features {
-  display: flex;
-  
-}
+
 
 
 .our-features-description {
@@ -238,7 +240,7 @@ ul {
 }
 
 
-.our-features-description,:not(:last-child) {
+.our-features-description:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -274,6 +276,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
 .team-text {
   padding-top: 30px;
@@ -289,17 +292,90 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child) {
+.team-item:not(:last-child){
   margin-right: 30px;
 }
-.icons-social{
+
+
+/* Social icons */
+
+.icons-social-aline{
+  justify-content: center;
+
+}
+.socil-list:not(:last-child){
+  margin-right: 10px;
+
+}
+
+.icons-social-team{
+  display: flex;
   width: 44px;
   height: 44px;
-  display: inline-block;
+  border-color: transparent;
+  border-radius: 50%;
   fill: #AFB1B8;
-  border: 0 transparent ;
-  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+
+
 }
+
+.icons-social{ 
+  width: 20px;
+  height: 20px;
+  
+}
+
+.icons-social-team:hover,
+.icons-social-team:focus{
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+  cursor: pointer;
+}
+
+
+
+
+/* our-customars */
+
+.our-customars {
+  display: flex;
+ 
+}
+.our-customers-link:not(:last-child){
+  margin-right: 30px;
+}
+
+.our-customers-link {
+  width: 170px;
+height: 92px;
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+align-items: center;
+}
+
+.icon-customers{
+display: inline-block;
+border: none;
+  fill: #AFB1B8;
+
+}
+
+
+.icon-customers:hover,
+.icon-customers:focus{
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
@@ -381,41 +457,6 @@ ul {
   color: var(--secondery-text-color);
 }
 
-/* our-customars */
-
-.our-customars {
-  display: flex;
-}
-.our-customers-link:not(:last-child) {
-  margin-right: 30px;
-}
-
-.our-customers-link {
-  display: flex;
-}
-
-.icon-customers{
-display: inline-block;
-width: 170px;
-  height: 92px;
-  fill: #AFB1B8;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-
-}
-.icon-customers:hover,
-.icon-customers:focus{
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  cursor: pointer;
-}
-
-
-
-
-
 
 
 /* footer */
@@ -454,4 +495,3 @@ width: 170px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-icon-foster-peters
